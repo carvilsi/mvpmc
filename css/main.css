@@ -1,0 +1,85 @@
+#idea {
+    resize: none;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.ul_my {
+    list-style-type: none;
+    padding: 10px !important;
+    margin: 10px !important;
+}
+
+.slow {
+    padding-right: 0 !important;
+}
+
+.fast {
+    padding-left: 0 !important;
+}
+
+.vacio {
+    min-height: 40px;
+}
+
+.titulo_log {
+    font-size: 12px;
+}
+
+.over_content {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.glyphicon-move {
+    cursor: move;
+    cursor: -webkit-grabbing;
+}
+
+.ghost {
+    opacity: 0.4;
+}
+
+.block__list {
+    padding: 20px 0;
+    max-width: 360px;
+    margin-top: -8px;
+    margin-left: 5px;
+    background-color: #fff;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+.yellowm {
+    background-color: #FFFF66;
+}
+
+.redm {
+    background-color: #FF5050;   
+}
+
+.greenm {
+    background-color: #66FF66;
+}

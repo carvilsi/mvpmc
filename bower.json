@@ -1,0 +1,23 @@
+{
+  "name": "mvpmc",
+  "description": "Minimum Viable Product Model Canvas",
+  "main": "./main.js",
+  "authors": [
+    "carvilsi"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "FileSaver": "*",
+    "html2canvas": "~0.4.1",
+    "Sortable": "~1.0.1"
+  }
+}

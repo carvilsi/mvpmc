@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Minimum Viable Product Prototyping Tool">
+    <meta name="keywords" content="minimum viable product, MVP, prototyping, tool, proptotype, design, startup, model busisness canvas">
+    <meta name="author" content="Carlos Villanueva carvilsi@gmail.com">
+    <title>Minimum Viable Product Prototyping</title>
+
+
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid theme-showcase" role="main">
+
+        <!--    TITLE -->
+        <div class="row row-centered">
+            <div class="col-xs-9 col-centered slow">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">MVP Prototyping</span>
+                    <input id="name" type="text" class="form-control" placeholder="mvp project name" aria-describedby="basic-addon1">
+
+                </div>
+
+            </div>
+
+            <!--                BUTTONS    -->
+
+
+            <div id="button_actions" class="col-xs-3 col-centered nopadding">
+                <div  class="btn-group" role="group" aria-label="...">
+                    <button id="button_save" class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Save changes">
+                        <span class="save glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+                    </button>
+                    <a id="export" class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Export mvpm">
+                        <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
+                    </a>
+
+                    <span class="btn btn-default btn-file" data-toggle="tooltip" data-placement="bottom" title="Import mvpm">
+                        <span class="glyphicon glyphicon-open-file" aria-hidden="true"></span>
+                    <input type="file" id="import" accept=".json">
+                    </span>
+
+                    <a id="screenshot" class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Take a Screenshot">
+                        <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+                    </a>
+
+                    <button id="trash" class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Clear all">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-centered nopadding">
+
+            <!--        THE IDEA-->
+
+
+            <div class="col-xs-7 nopadding">
+                <div class="panel panel-default nopadding">
+                    <div class="panel-heading">THE IDEA</div>
+                    <div class="panel-body nopadding">
+                        <div class="row-xs-6 nopadding">
+                            <textarea class="form-control" rows="3" id="idea" placeholder="Description of the idea."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                BRAINSTORMING-->
+
+                <div class="panel panel-default nopadding over_content">
+                    <div class="panel-heading">BRAINSTORMING FEATURES</div>
+                    <div class="panel-body nopadding" id="log_of_features">
+
+                        <div class="row row-centered">
+                            <div class="col-xs-6 slow">
+                                <div class="panel panel-default nopadding">
+                                    <div class="panel-heading titulo_log">High Funcionality and Slow Development
+                                        <button class="btn btn-default btn-xs" type="button" id="new_feature_hfsd" data-toggle="modal" data-target="#modal_new_feature">
+                                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div class="panel-body nopadding vacio">
+                                        <ul id="hfsd" class="ul_my"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 fast">
+                                <div class="panel panel-default nopadding">
+                                    <div class="panel-heading titulo_log">High Funcionality and Fast Development
+                                        <button class="btn btn-default btn-xs" type="button" id="new_feature_hffd" data-toggle="modal" data-target="#modal_new_feature">
+                                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div class="panel-body nopadding vacio">
+                                        <ul id="hffd" class="ul_my"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-centered">
+                            <div class="col-xs-6 slow">
+                                <div class="panel panel-default nopadding">
+                                    <div class="panel-heading titulo_log">Low Funcionality and Slow Development
+                                        <button class="btn btn-default btn-xs" type="button" id="new_feature_lfsd" data-toggle="modal" data-target="#modal_new_feature">
+                                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div class="panel-body nopadding vacio">
+                                        <ul id="lfsd" class="ul_my"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 fast">
+                                <div class="panel panel-default nopadding">
+                                    <div class="panel-heading titulo_log">Low Funcionality and Fast Development
+                                        <button class="btn btn-default btn-xs" type="button" id="new_feature_lffd" data-toggle="modal" data-target="#modal_new_feature">
+                                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div class="panel-body nopadding vacio">
+                                        <ul id="lffd" class="ul_my"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--                        MVP FEATURES-->
+            <div class="col-xs-5 nopadding">
+                <div class="panel panel-default nopadding">
+                    <div class="panel-heading">MVP FEATURES</div>
+                    <div class="panel-body nopadding vacio">
+                        <ul id="mvp_features" class="ul_my"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--        MODAL-->
+
+        <!--        MODAL ADD NEW FEATURE-->
+
+        <div id="modal_new_feature" class="modal fade" id="0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-group">
+                                <textarea class="form-control" id="feature" autofocus="autofocus" placeholder="New awessome feature..."></textarea>
+                            </div>
+                        </form>
+
+                        <button id="button_red" class="btn redm" type="button" autocomplete="off" onclick="colorMe(this.id)"></button>
+                        <button id="button_yellow" class="btn yellowm" type="button" autocomplete="off" onclick="colorMe(this.id)"></button>
+                        <button id="button_green" class="btn greenm" type="button" autocomplete="off" onclick="colorMe(this.id)"></button>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="button_add_feature">Add Feature</button>
+                        <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        MODAL MESSAGE TO USER-->
+
+        <div id="modal_message" class="modal fade">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Oops!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="message"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ###################################### AllTheScripts ###################################### -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/mvpmc.js"></script>
+        <script src="bower_components/Sortable/Sortable.min.js"></script>
+        <script src="bower_components/html2canvas/build/html2canvas.min.js"></script>
+        <script src="bower_components/FileSaver/FileSaver.min.js"></script>
+        <script src="js/canvas-to-blob.min.js"></script>
+
+        <script>if (window.module) module = window.module;</script>
+
+
+        <script>require('./renderer.js')</script>
+
+</body>

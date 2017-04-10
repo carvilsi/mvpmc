@@ -1,0 +1,20 @@
+{
+  "name": "mvpmc",
+  "version": "1.0.0",
+  "description": "mvpmc ",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . MVPmc --all --out ./bin/MVPmc --electron-version=1.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "carvilsi",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-packager": "^8.6.0",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
