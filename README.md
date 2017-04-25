@@ -10,7 +10,7 @@ The electron app recycled from the infamous web app with the [same name](http://
 
 ## Run
 
-Choose and download the right package for you os at the releases place in this repository. Unpack the content and run the bin.
+Choose and download the right package for you os at the [release](https://github.com/carvilsi/mvpmc/releases) place in this repository. Unpack the content and run the bin.
 
 ## Build
 
